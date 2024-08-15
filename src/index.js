@@ -5,16 +5,16 @@ import extras from 'aframe-extras';
 
 aframe.registerComponent('cursor-listener', {
     init: function() {
-        console.log('init');
-        //var rock = document.querySelector('#rock');
-        this.el.addEventListener('mouseenter', function(evt) {
-            this.setAttribute('color', 'blue');
-            console.log(evt.detail, this);
+        this.el.addEventListener('mouseenter', evt => {
+            this.el.setAttribute('color', 'blue');
+            console.log(evt.detail, this.el);
         });
 
-        this.el.addEventListener('click', function(evt) {
-            var music = document.querySelector('[sound]');
-            music.components.sound.playSound();
+        this.el.addEventListener('click', evt => {
+            const musicEl = this.el.components.sound;
+            if (musicEl) {
+                musicEl.playSound();
+            }
         });
     }
 });
