@@ -23,11 +23,6 @@ This project is a simple experience built using A-Frame. The scene is set in a s
 - A modern web browser (Chrome, Firefox, or Edge) that supports WebGL and A-Frame.
 - A simple HTTP server to serve the files locally (e.g., `http-server` or `live-server`).
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/meditation-vr.git
-
+You can experience it on https://unchanted.github.io/WebMed/
 
 Arcade 40
